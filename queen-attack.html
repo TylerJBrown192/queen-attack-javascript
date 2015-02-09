@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-1.11.2.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Queen Attack</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Queen Attack</h1>
+
+    <form id="queen-attack">
+      <div class="form-group">
+        <label for="queenX">Queen's x-axis position:</label>
+        <input id="queenX" type="text">
+
+        <label for="queenY">Queen's y-axis position:</label>
+        <input id="queenY" type="text">
+        <br><br>
+        <label for="opponentX">Opponent's x-axis position:</label>
+        <input id="opponentX" type="text">
+
+        <label for="opponentY">Opponent's y-axis position:</label>
+        <input id="opponentY" type="text">
+      </div>
+      <br>
+      <button type="submit" class="btn">Find out!</button>
+    </form>
+
+    <div id="result">
+      <p>Queen at [<span class="queenX"></span>, <span class="queenY"></span>] can <span class="not"></span> attack Opponent at [<span class="opponentX"></span>, <span class="opponentY"></span>].</p>
+    </div>
+  </div>
+</body>
+</html>
